@@ -1,6 +1,5 @@
 <script setup>
 import URLInput from './components/URLInput.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>

@@ -2,7 +2,13 @@
 export default{
     data(){
         return {
-            URLtext: ''
+            URLtext: '',
+            URLshort: ''
+        }
+    },
+    methods: {
+        shortenAPICall(event){
+            alert("Test, to call API: with "+this.URLtext)
         }
     }
 }
@@ -12,9 +18,10 @@ export default{
   <div class="URL_input">
     <h3>
       Input a URL
-        <p>The original URL is: {{ URLtext }}</p>
+        <p>The original URL is: {{ URLshort }}</p>
         <p>The shortened URL is: {{ URLtext }}</p>
         <input v-model="URLtext" placeholder="Put in a URL" />
+        <button @click="shortenAPICall">Shorten!</button>
     </h3>
   </div>
 </template>
